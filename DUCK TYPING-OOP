@@ -1,0 +1,98 @@
+# OOP-DUCT-TYPING
+DUCK TYPING IN PYTHON
+#DUCK TYPING
+#VICKY K BAJOLE
+class Tata:
+    def max_speed(self):
+        print("max_speed of tata is 180 kmph")
+    def fuel_type(self):
+        print("fuel_type of tata is diesel")
+    def transmission(self):
+        print("transmissionof tata is auto")
+    def color_type(self):
+        print("color_type of tata is white")
+
+class Skoda:
+    def max_speed(self):
+        print("max_speed of skoda is 280 kmph")
+    def fuel_type(self):
+        print("fuel_type of skoda is petrol")
+    def transmission(self):
+        print("transmission of skoda is manual")
+    def color_type(self):
+        print("color_type of skoda is black")
+
+s=Skoda()
+t=Tata()
+
+def get_carinfo(obj):
+       obj.max_speed()
+       obj.fuel_type()
+       obj.transmission()
+       obj.color_type()
+
+get_carinfo(s)
+get_carinfo(t)
+
+
+li=[10,20,30,40,50,60]
+
+print(li)
+
+n=int(input("enter No."))
+
+for ele in li:
+      if ele ==n:
+        print(li.index(n))
+        break
+      else:
+        print(-1)
+ 
+
+class Axis:
+    def home_loan(self):
+        print(" Interest rate for home_loan is 3.5%")
+
+    def saving_account(self):
+        print(" Interest rate for saving_account is 5.5%")
+
+    def deposit_amount(self):
+        print("Minimum deposit_amount is 250")
+
+class ICICI:
+    def home_loan(self):
+        print(" Interest rate for home_loan is 4.5%")
+
+    def saving_account(self):
+        print(" Interest rate for saving_account is 20.7%")
+
+    def deposit_amount(self):
+        print(" Minimum deposit_amount is 550")
+
+class SBI:
+    def home_loan(self):
+        print(" Interest rate for home_loan is 7.5%")
+
+    def saving_account(self):
+        print(" Interest rate for saving_account is 26.7%")
+
+    def deposit_amount(self):
+        print("  Minimum deposit_amount is 1000")
+
+
+a=Axis()
+i=ICICI()
+s=SBI()
+
+def get_BankInfo(obj):
+    obj.home_loan()
+    obj.saving_account()
+    obj.deposit_amount()
+
+get_BankInfo(a)
+get_BankInfo(i)
+get_BankInfo(s)
+
+
+        
+
